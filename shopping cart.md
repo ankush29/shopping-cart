@@ -42,7 +42,7 @@ angular.module('services.cart', [])
   };
 
   $scope.persist = function(cart) {
-    localStorage.setItem('cart', JSON.stringify( cart ) );
+    localStorage.setItem('cart', JSON.stringify(cart));
     $scope.refresh();
   };
 
