@@ -36,9 +36,8 @@ angular.module('services.cart', [])
   };
 
   $scope.clear = function() {
-    if(localStorage.getItem('cart') != ''){
+    if(localStorage.getItem('cart')){
       localStorage.removeItem('cart');
-      $scope.refresh();
     }
   };
 
