@@ -1,7 +1,7 @@
 angular.module('services.cart', []).service('Cart', ['$scope', 'Reviewer', function ($scope, Reviewer) { 
 
   var cart;
-
+  
   $scope.getCart = function() {
     var cartVal =  localStorage.getItem('cart');
     cart = JSON.parse( cartVal );
@@ -55,4 +55,5 @@ angular.module('services.cart', []).service('Cart', ['$scope', 'Reviewer', funct
   $scope.refresh = function() {
     $scopecope.$apply();
   };
+  
 }]);
