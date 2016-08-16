@@ -1,4 +1,5 @@
-angular.module('services.cart', []).service('Cart', ['$scope', 'Reviewer', function ($scope, Reviewer) { 
+angular.module('services.cart', [])
+.service('Cart', ['$scope', 'Reviewer', function ($scope, Reviewer) { 
 
   var cart;
   
