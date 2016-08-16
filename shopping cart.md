@@ -5,7 +5,7 @@ angular.module('services.cart', [])
   
   $scope.getCart = function() {
     var cartVal =  localStorage.getItem('cart');
-    cart = JSON.parse( cartVal );
+    cart = JSON.parse(cartVal);
     return cart;
   };
 
@@ -48,7 +48,7 @@ angular.module('services.cart', [])
   };
 
   $scope.changeQuantity = function (upatedQunatity,id){
-    cart = this.getCart();
+    cart = $scope.getCart();
     cart[id] = updatedQuantity;
     $scope.save(cart);
   };
